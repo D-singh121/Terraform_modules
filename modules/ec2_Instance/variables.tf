@@ -12,7 +12,7 @@ variable "key_pair_name" {
 
 }
 
-variable "instance_name" {
-    description = "value for instance tag name"
-
+variable "tags" {
+  type    = map(string)
+  default = {}
 }
